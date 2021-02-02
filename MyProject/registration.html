@@ -1,0 +1,70 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+<title>Regisration Form</title>
+<link rel="stylesheet" href="registrationStyle.css">
+
+</head>  
+<body>  
+    <form method="POST" action="connection.php">  
+        <div class="container">  
+        <center>  <h1 style="color: chartreuse;">  Registeration Form</h1> </center>  
+        <hr>  
+        <label > First Name </label>   
+        <input type="text" name="firstname" placeholder= "First Name" size="15" required />   
+       
+        <label> Middle Name: </label>   
+        <input type="text" name="middlename" placeholder="Middle Name" size="15" required />   
+       
+        <label> Last Name: </label>    
+        <input type="text" name="lastname" placeholder="Last Name" size="15"required />   
+        
+        <div>  
+            <label> Course : </label>   
+        
+            <select>  
+                <option value="CourseSelect" name="course">Select Course</option>  
+                <option value="BSCS">BS(CS)</option>  
+                <option value="BSSE">BS(SE)</option>  
+                <option value="BSIT">BS(IT)</option>  
+                <option value="BSDS">BS(DS)</option>  
+                <option value="BSAI">BS(AI)</option>  
+                <option value="BSIS">BS(IS)</option>  
+            </select>  
+        </div>  
+    
+        <div>  
+            <label>   Gender : </label><br>  
+            
+            <input type="radio" value="Male" name="gender" checked > Male   
+            <input type="radio" value="Female" name="gender"> Female   
+            <input type="radio" value="Other" name="gender"> Other     
+        </div>  
+
+        <label>   Phone :  </label>  
+        <input type="text" name="countryCode" placeholder="Country Code"  value="+92" size="2"/>   
+        <input type="text" name="phone" placeholder="phone no." size="10" required>   
+        
+        Current Address :  
+        <textarea cols="80" rows="5" placeholder="Current Address" value="address" name="address" required>  </textarea>  
+        
+        <label for="email"><b>Email</b></label>  
+        <input type="text" placeholder="Enter Email" name="email" required>  
+        
+            <label for="psw"><b>Password</b></label>  
+            <input type="password" placeholder="Enter Password" name="psw" required>  
+        
+            <label for="psw-repeat"><b>Re-type Password</b></label>  
+            <input type="password" placeholder="Retype Password" name="pswRpt" required>  
+        
+            <button type="submit" class="registerbtn">Register</button>  
+        </div>      
+    </form>  
+
+   
+
+
+</body>  
+</html>  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bio Data Form</title>
+        <style>
+            legend
+            {
+                border: 2px solid green;
+                color: red;
+            }
+            h1{
+                color: rgb(163, 13, 58); 
+                text-align: center;
+            }
+            .contain
+            {
+                margin: 5px;
+                padding: 10px;
+            }
+            .contain label{font-size: 16px; padding: 10px; font-family: serif;}
+
+            #t01, td { padding: 8px; margin: 5px; font-family:Georgia, 'Times New Roman', Times, serif; align-content: center;}
+            
+        </style>
+    </head>
+
+    <body style="background-color: rgb(231, 216, 224); ">
+       
+        <h1 class="h1">Bio-Data Form <hr></h1>
+
+        <form action="" method="POST">
+            <fieldset style=" border-color: rgb(9, 99, 151); ">
+                <legend class="legend">Personal Information</legend>
+               
+                <center><table id="t01">
+                
+                <tr>
+                    <td><lable> First Name</lable></td>
+                    <td><input type="text" name="fname" placeholder="First Name" required ></td>
+                    <td><lable> Middle Name</lable></td>
+                    <td><input type="text" name="mname" placeholder="Middle Name" required ></td>
+                    <td><lable> Last Name</lable></td>
+                    <td><input type="text" name="lname" placeholder="Last Name" required ></td>
+                    <td><lable> CNIC</lable></td>
+                    <td><input type="text" name="cnic" placeholder="CNIC" required ></td>
+                    <td><lable> DOB</lable></td>
+                    <td><input type="date" name="dob" placeholder="Date of Birth" required ></td>
+                    <td><lable> Email</lable></td>
+                    <td><input type="text" name="email" placeholder="email" required ></td>
+ 
+                </tr>
+                <tr>
+                    <td><lable> Father Name</lable></td>
+                    <td><input type="text" name="fname" placeholder="Father Name" required ></td>
+                    <td><lable> Father's CNIC</lable></td>
+                    <td><input type="text" name="lname" placeholder="Father CNIC" required ></td>
+                </tr>
+
+                </table></center>
+            </fieldset>
+
+            <br>
+            <fieldset style=" border-color: rgb(9, 99, 151); ">
+                <legend class="legend">Acadamic Qualification</legend>
+            
+            </fieldset>
+            
+        </form>
+    </body>
+
+</html>
